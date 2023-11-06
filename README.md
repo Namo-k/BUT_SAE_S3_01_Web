@@ -2,7 +2,7 @@
 
 SAE S3-01 : Refonte d'un site web et exploitation d'une base de données
 
-Équipe :
+Équipe (203) :
 - Namodacane KALIAMOORTHY
 - Ines KADJI
 - Isra DHIAB
