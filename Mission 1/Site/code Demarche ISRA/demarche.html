@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Démarches</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/demarche.css">
+    <link rel="icon" type="image/png" href="../images/mini-logo.png">
+    <!--<link rel="stylesheet" type="text/css" href="css/pageDeConnexion.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css"> 
+    
+
+</head>
+<header>
+    <nav class="navbar">
+        <a href="../code Accueil INES/Accueil.html" class="logo"><img src="../images/logo.png" width="160px"></a>
+        <div class="nav-likns">
+            <ul>
+                <li> <a href="#" class="administration effet-soulignement"> ADMINISTRATION <br> PUBLIQUE </a></li>
+                <li> <a href="#" class="service effet-soulignement">SERVICE <br> SOCIAUX </a></li>
+                <li> <a href="#" class="loisirs effet-soulignement">LOISIRS ET <br> CULTURE</a> </li>
+                <li class="klass"> <a href="#" class="economie effet-soulignement">ECONOMIE ET <br> MOBILITE </a></li>
+                <div class="recherche">
+                    <div class="search2">
+                        <button class="btnSearch2">
+                            <img src="../images/recherche.png" id="search2">
+                        </button>
+                    </div>
+                    <input type="search" placeholder="  Rechercher..." id="inputSearch2" class="inputSearch2">
+                </div>
+            </ul>
+        </div>
+        <input type="search" placeholder="  Rechercher..." id="inputSearch" class="inputSearch">
+        <div id="logos">
+            <div class="search">
+                <button class="btnSearch">
+                    <img src="../images/recherche.png" id="search" onmouseover="hover(this, 1);"
+                        onmouseout="hoverOut(this,1)">
+                </button>
+            </div>
+            <div class="connexion">
+                <a href="../Page de Connexion/pageDeConnexion.html"><img src="../images/connexion.png" alt="region" width="42px"
+                        height="42px" onmouseover="hover(this,2);" onmouseout="hoverOut(this,2)"></a>
+            </div>
+        </div>
+        <img src="../images/hamburger.png" width="100px" class="menu-hamburger" id="burger"
+            onmouseover="hover(this, 3);" onmouseout="hoverOut(this,3)">
+    </nav>
+
+    
+
+    <div class="img_principale">
+        <img id="demarche" src="../images/image/nvdemarchee.png" alt="dem" width="" height="">
+    </div>
+
+
+</header>
+
+
+<body>
+    <!--******************* DEBUT IMG CENTRALE ******************-->
+
+
+     <!--******************* FIN IMG CENTRALE ******************
+    <div id="chemin">
+        <p> Selectionner la démarche qui vous interresse</p>
+    </div>-->
+     <!--******************* DEBUT FILTRE ******************-->
+    <div class="btnRemonter"> 
+        <img src="../images/iconRemonter.png" class="iconRemonter">
+    </div>
+    <div><img src="../images/colombes.png" alt="" class="colombe" id="colombe1"></div>
+
+    <div id="arbo"><a href="../code Accueil INES/Accueil.html">Accueil > </a><a href="#"> Démarches </a></div>
+    <div id="sepa"></div>
+
+    <div id="titrefiltrer"> Sélectionnez la démarche qui vous intéresse : </div>
+
+
+    <!--******************* FIN FILTRE ******************-->
+    
+    <div class="filtre">
+        <button id="scrollToPaiement">PAIEMENT EN LIGNE</button>
+        <button id="scrollToElections">FAMILLE &<br>JEUNESSE</button>
+        <button id="scrollToAff">AFFAIRES GÉNÉRALES</button>
+        <button id="scrollToEtatCivil">ÉTAT CIVIL</button>
+        <button id="scrollToTravaux">TRAVAUX &<br> VOIRIE</button>
+        <button id="scrollToFamille">ÉLECTION</button>
+        <button id="scrollToProprete">PROPRETÉ</button>
+  
+    </div>
+    <div><img src="../images/colombes.png" alt="" class="colombe" id="colombe2"></div>
+
+<!------------------------- DEBUT 1 CAROUSEL ------------------------->
+
+    <div class="separer" id="first_sepater">
+        <p>PAIEMENT EN LIGNE</p>
+        <div class="trait"></div>
+    </div>
+    <div class="container swiper" id="carousel1">
+        <div class="slide-container">
+            <div class="card-wrapper swiper-wrapper">
+                <div class="card swiper-slide">
+                    <div class="image-box">
+                        <img src="../images/image/pmt/creche.jpeg" alt="">
+                    </div>
+                    <div class="profile-details">
+                        <h4>Crèche</h4>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-box">
+                        <img src="../images/image/pmt/activite.jpeg" alt="">
+                    </div>
+                    <div class="profile-details">
+                        <h4>Activités périscolaires</h4>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-box">
+                        <img src="../images/image/pmt/reglement_impaye.jpeg" alt="">
+                    </div>
+                    <div class="profile-details">
+                        <h4>Règlement en ligne</h4>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-box">
+                        <img src="../images/image/pmt/reglement_ligne.jpeg" alt="">
+                    </div>
+                    <div class="profile-details">
+                        <h4>Règlement impayés</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next swiper-navBtn"></div>
+        <div class="swiper-button-prev swiper-navBtn"></div>
+    </div>
+    <div><img src="../images/colombes.png" alt="" class="colombesans" id="colombe3"></div>
+<!------------------------- FIN 1 CAROUSEL ------------------------->
+
+<!------------------------- DEBUT 2 CAROUSEL ------------------------->
+
+    <div class="separer">
+        <p>FAMILLE & JEUNESSE</p>
+        <div class="trait"></div>
+    </div>
+    <div class="container swiper" id="carousel2">
+        <div class="slide-container">
+            <div class="card-wrapper swiper-wrapper">
+                <div class="card swiper-slide">
+                    <div class="image-box">
+                        <img src="../images/image/famille_jeunesse/cantine.jpeg" alt="">
+                    </div>
+                    <div class="profile-details">
+                        <h4>Pré-inscription <br> Restauration scolaire</h4>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-box">
+                        <img src="../images/image/famille_jeunesse/carte_scolaire.jpeg" alt="">
+                    </div>
+                    <div class="profile-details">
+                        <h4>Carte scolaire</h4>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-box">
+                        <img src="../images/image//famille_jeunesse/inscription_creche.jpeg" alt="">
+                    </div>
+                    <div class="profile-details">
+                        <h4>Inscription à la crèche</h4>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-box">
+                        <img src="../images/image/famille_jeunesse/inscription_ecole.jpeg" alt="">
+                    </div>
+                    <div class="profile-details">
+                        <h4>Inscription à l'école</h4>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-box">
+                        <img src="../images/image//famille_jeunesse/garderie-etude.jpeg" alt="">
+                    </div>
+                    <div class="profile-details">
+                        <h4>Pré-inscription Garderie et études</h4>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-box">
+                        <img src="../images/image/famille_jeunesse/sejour_vacance_1.jpeg" alt="">
+                    </div>
+                    <div class="profile-details">
+                        <h4>Pré-inscription séjours vacances</h4>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-box">
+                        <img src="../images/image/famille_jeunesse/centre_loisir.jpeg" alt="">
+                    </div>
+                    <div class="profile-details">
+                        <h4>Pré-inscription séjours vacances</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next swiper-navBtn"></div>
+        <div class="swiper-button-prev swiper-navBtn"></div>
+    </div>
+<!------------------------- FIN 2 CAROUSEL ------------------------->
+
+<!------------------------- DEBUT 3 CAROUSEL ------------------------->
+
+    <div  class="separer">
+        <p>AFFAIRES GÉNÉRALES</p>
+        <div class="trait"></div>
+    </div>
+    
+    <div class="container swiper" id="carousel3">
+        <div class="slide-container">
+            <div class="card-wrapper swiper-wrapper">
+                <div class="card swiper-slide">
+                    <div class="image-box">
+                        <img src="../images/image/affaire_general/attestation.jpeg" alt="">
+                    </div>
+                    <div class="profile-details">
+                        <h4>Demande d'attestation d'accueil</h4>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-box">
+                        <img src="../images/image/affaire_general/carte_identite.jpeg" alt="">
+                    </div>
+                    <div class="profile-details">
+                        <h4>Demande de carte d’identité</h4>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-box">
+                        <img src="../images/image/affaire_general/passeport.jpeg" alt="">
+                    </div>
+                    <div class="profile-details">
+                        <h4>Demande de passeport</h4>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-box">
+                        <img src="../images/image/affaire_general/deces.jpeg" alt="">
+                    </div>
+                    <div class="profile-details">
+                        <h4>Déclarer un décès</h4>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-box">
+                        <img src="../images/image/affaire_general/PACS.jpeg" alt="">
+                    </div>
+                    <div class="profile-details">
+                        <h4>PACS</h4>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-box">
+                        <img src="../images/image/affaire_general/mariage.jpeg" alt="">
+                    </div>
+                    <div class="profile-details">
+                        <h4>Se marier</h4>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-box">
+                        <img src="../images/image/affaire_general/naissance.jpeg" alt="">
+                    </div>
+                    <div class="profile-details">
+                        <h4>Déclarer une naissance</h4>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-box">
+                        <img src="../images/image/affaire_general/recensement.jpeg" alt="">
+                    </div>
+                    <div class="profile-details">
+                        <h4>Recensement citoyen</h4>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-box">
+                        <img src="../images/image/affaire_general/prenom.jpeg" alt="">
+                    </div>
+                    <div class="profile-details">
+                        <h4>Changement de prénom(s)</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next swiper-navBtn"></div>
+        <div class="swiper-button-prev swiper-navBtn"></div>
+    </div>
+    <div><img src="../images/colombes.png" alt="" class="colombesans" id="colombe4"></div>
+
+
+<!------------------------- FIN 3 CAROUSEL ------------------------->
+
+<!------------------------- DEBUT 4 CAROUSEL ------------------------->
+
+    <div class="separer">
+        <p>ÉTAT CIVIL</p>
+        <div class="trait"></div>
+    </div>
+    <div class="container swiper" id="carousel4">
+        <div class="slide-container">
+            <div class="card-wrapper swiper-wrapper">
+                <div class="card swiper-slide">
+                    <div class="image-box">
+                        <img src="../images/image/etat_civil/acte_deces.jpeg" alt="">
+                    </div>
+                    <div class="profile-details">
+                        <h4><!--Pré-inscription <br>--> Restauration scolaire</h4>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-box">
+                        <img src="../images/image/etat_civil/acte_mariage.jpeg" alt="">
+                    </div>
+                    <div class="profile-details">
+                        <h4>Carte scolaire</h4>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-box">
+                        <img src="../images/image/etat_civil/acte_naissance.jpeg" alt="">
+                    </div>
+                    <div class="profile-details">
+                        <h4>Inscription à la crèche</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next swiper-navBtn"></div>
+        <div class="swiper-button-prev swiper-navBtn"></div>
+    </div>
+<!------------------------- FIN 4 CAROUSEL ------------------------->
+
+
+<!------------------------- DEBUT 5 CAROUSEL ------------------------->
+
+    <div class="separer">
+        <p>TRAVAUX & VOIRIE</p>
+        <div class="trait"></div>
+    </div>
+    <div><img src="../images/colombes.png" alt="" class="colombesans" id="colombe5"></div>
+    <div class="container swiper" id="carousel5">
+        <div class="slide-container">
+            <div class="card-wrapper swiper-wrapper">
+                <div class="card swiper-slide">
+                    <div class="image-box">
+                        <img src="../images/image/traveau_voie/chantier.jpeg" alt="">
+                    </div>
+                    <div class="profile-details">
+                        <h4>Chantiers / travaux</h4>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-box">
+                        <img src="../images/image/traveau_voie/construire.jpeg" alt="">
+                    </div>
+                    <div class="profile-details">
+                        <h4>Demande de permis de construire/démolir/aménager</h4>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-box">
+                        <img src="../images/image/traveau_voie/decla_travaux.jpeg" alt="">
+                    </div>
+                    <div class="profile-details">
+                        <h4>Déclaration de travaux</h4>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-box">
+                        <img src="../images/image/traveau_voie/demenagement.jpeg" alt="">
+                    </div>
+                    <div class="profile-details">
+                        <h4>Déménagement</h4>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-box">
+                        <img src="../images/image/traveau_voie/racordement.jpeg" alt="">
+                    </div>
+                    <div class="profile-details">
+                        <h4>Raccordement à l'assainissement</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next swiper-navBtn"></div>
+        <div class="swiper-button-prev swiper-navBtn"></div>
+    </div>
+<!------------------------- FIN 5 CAROUSEL ------------------------->
+
+<!------------------------- DEBUT  6 CAROUSEL ------------------------->
+
+    <div class="separer" >
+        <p>ÉLECTION</p>
+        <div class="trait"></div>
+    </div>
+    <div class="container swiper" id="carousel6">
+        <div class="slide-container">
+            <div class="card-wrapper swiper-wrapper">
+                <div class="card swiper-slide">
+                    <div class="image-box">
+                        <img src="../images/image/election/bureau_vote.jpeg" alt="">
+                    </div>
+                    <div class="profile-details">
+                        <h4>Situer son bureau de vote</h4>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-box">
+                        <img src="../images/image/election/vote.jpeg" alt="">
+                    </div>
+                    <div class="profile-details">
+                        <h4>Vote par procuration</h4>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-box">
+                        <img src="../images/image/election/electoral.jpeg" alt="">
+                    </div>
+                    <div class="profile-details">
+                        <h4>Inscription sur les listes électorales</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next swiper-navBtn"></div>
+        <div class="swiper-button-prev swiper-navBtn"></div>
+    </div>
+    <div><img src="../images/colombes.png" alt="" class="colombesans" id="colombe6"></div>
+
+<!------------------------- FIN 6 CAROUSEL ------------------------->
+
+<!------------------------- DEBUT 7 CAROUSEL ------------------------->
+
+
+<div class="separer" >
+    <p>PROPRETÉ</p>
+    <div class="trait"></div>
+</div>
+<div class="container swiper" id="carousel7">
+    <div class="slide-container">
+        <div class="card-wrapper swiper-wrapper">
+            <div class="card swiper-slide">
+                <div class="image-box">
+                    <img src="../images/image/propre/enlevement_graph.jpeg" alt="">
+                </div>
+                <div class="profile-details">
+                    <h4>Enlèvement de graffitis</h4>
+                </div>
+            </div>
+            <div class="card swiper-slide">
+                <div class="image-box">
+                    <img src="../images/image/propre/encombrement.jpeg" alt="">
+                </div>
+                <div class="profile-details">
+                    <h4>Allô encombrants</h4>
+                </div>
+            </div>
+            <div class="card swiper-slide">
+                <div class="image-box">
+                    <img src="../images/image/propre/composteur.jpeg" alt="">
+                </div>
+                <div class="profile-details">
+                    <h4>Demande de composteurs</h4>
+                </div>
+            </div>
+            <div class="card swiper-slide">
+                <div class="image-box">
+                    <img src="../images/image/propre/decheterie.jpeg" alt="">
+                </div>
+                <div class="profile-details">
+                    <h4>Déchetteries</h4>
+                </div>
+            </div>
+            <div class="card swiper-slide">
+                <div class="image-box">
+                    <img src="../images/image/propre/poubelle.jpeg" alt="">
+                </div>
+                <div class="profile-details">
+                    <h4>Poubelles endommagées/volées</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-next swiper-navBtn"></div>
+    <div class="swiper-button-prev swiper-navBtn"></div>
+</div>
+
+<!------------------------- FIN 7 CAROUSEL ------------------------->
+
+
+
+
+<div id="footer">
+    <div class="haut">
+        <div class="firstItem">
+            <div class="logoC">
+                <img src="../images/logo.png" alt=""></div>
+            <div class="plan">
+                <img id="carte" src="../images/footer/carte.png" alt="">
+                <p>Consulter le Plan</p>
+            </div>
+        </div>
+        <div class="traitSepa"></div>
+        <div class="secondItem">
+            <div  class="secondItemCss">
+                <img id="img1" src="../images/footer/localisation.png" alt="">
+                <p>
+                    <span class="gras">HÔTEL DE VILLE DE COLOMBES</span><br>
+                    PLACE DE LA RÉPUBLIQUE <br>
+                    92700 COLOMBES
+                </p>
+            </div>
+            <div  class="secondItemCss">
+                <img id="img2"src="../images/footer/telephone.png" alt="">
+                <p>
+                    <span class="gras">01 47 60 80 00</span><br>
+                    <span id="num"> <a href="../code NumeroUtiles NAMO/numeroUtiles.html">Les Numéros Utiles ></a></span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="bas">
+        <div class="thirdItem">
+            <div class="iconRow">
+                <div class="iconNom">
+                    <a href="https://twitter.com/villecolombes?lang=fr">
+                    <img src="../images/footer/twitter.png" alt=""></a>
+                    <p>Twitter</p></a>
+                </div>
+                <div class="iconNom">
+                    <a href="https://www.facebook.com/VilleColombes/?locale=fr_FR">
+                    <img src="../images/footer/facebook.png" alt=""></a>
+                    <p>Facebook</p>
+                </div>
+            </div>
+            <div class="iconRow">
+                <div class="iconNom">
+                    <img id="mail" src="../images/footer/mail.png" alt="">
+                    <p>Mail</p>
+                </div>
+                <div class="iconNom">
+                    <img src="../images/footer/news.png" alt="">
+                    <p>NewsLetters</p>
+                </div>
+            </div>
+        </div>
+        <div class="traitSepa"></div>
+        <div class="horraire">
+            <p class="gras uppercase">Horaires</p>
+            <p class="uppercase">
+                <span id="jour" class="gras">LUNDI</span> <br>
+                ACCUEIL : 08H30-17H30 <br>
+                SERVICES : 10H30-17H30 <br>
+                <span id="jour" class="gras">DU MARDI AU VENDREDI</span><br>
+                8H30-17H30 <br>
+                <span  id="jour"  class="gras">SAMEDI</span> : 9H-12H <br>
+            </p>
+        </div>
+    </div>
+</div>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/demarche.js"></script>
+</body>
+</html>
