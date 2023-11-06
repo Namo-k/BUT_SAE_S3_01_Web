@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Namodacane">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../images/mini-logo.png">
+    <link rel="stylesheet" href="enquete.css">
+    <title>Enquête</title>
+</head>
+
+<body>
+    <div class="btnRemonter">
+        <img src="../images/iconRemonter.png" class="iconRemonter">
+    </div>
+    <nav class="navbar">
+        <a href="../code Accueil INES/Accueil.html" class="logo"><img src="../images/logo.png" width="160px"></a>
+        <div class="nav-likns">
+            <ul>
+                <li> <a href="#" class="administration effet-soulignementN"> ADMINISTRATION <br> PUBLIQUE </a></li>
+                <li> <a href="#" class="service effet-soulignementN">SERVICE <br> SOCIAUX </a></li>
+                <li> <a href="#" class="loisirs effet-soulignementN">LOISIRS ET <br> CULTURE</a> </li>
+                <li class="klass"> <a href="#" class="economie effet-soulignementN">ECONOMIE ET <br> MOBILITE </a></li>
+                <div class="recherche">
+                    <div class="search2">
+                        <button class="btnSearch2">
+                            <img src="../images/recherche.png" id="search2">
+                        </button>
+                    </div>
+                    <input type="search" placeholder="  Rechercher..." id="inputSearch2" class="inputSearch2">
+                </div>
+            </ul>
+        </div>
+        <input type="search" placeholder="  Rechercher..." id="inputSearch" class="inputSearch">
+        <div id="logos">
+            <div class="search">
+                <button class="btnSearch">
+                    <img src="../images/recherche.png" id="search" onmouseover="hover(this, 1);"
+                        onmouseout="hoverOut(this,1)">
+                </button>
+            </div>
+            <div class="connexion">
+                <a href="../Page de Connexion/pageDeConnexion.html"><img src="../images/connexion.png" alt="region" width="42px"
+                        height="42px" onmouseover="hover(this,2);" onmouseout="hoverOut(this,2)"></a>
+            </div>
+        </div>
+        <img src="../images/hamburger.png" width="100px" class="menu-hamburger" id="burger"
+            onmouseover="hover(this, 3);" onmouseout="hoverOut(this,3)">
+    </nav>
+
+    <div id="enquete">
+        <div>
+            <h1 class="animate-text">Enquête</h1>
+        </div>
+
+        <div class=" subtitleEnquete">
+        <img src="../images/bd.png" alt="">
+        <h2 class="animate-text effet-soulignement">Extraction de données : </h2>
+    </div>
+    <div class="sectionEnquete">
+        <div class="requeteSection">
+            <p>Les administrés prenant des médicaments pour des problèmes : </p>
+
+            <div class="patho_filters">
+                <span class="patho_item effet-soulignement active-work" data-filter="all">
+                    <p>All</p>
+                </span>
+                <span class="patho_item effet-soulignement " data-filter=".car">
+                    <p>Cardiaques</p>
+                </span>
+                <span class="patho_item effet-soulignement " data-filter=".can">
+                    <p>Cancéreux</p>
+                </span>
+                <span class="patho_item effet-soulignement " data-filter=".psy">
+                    <p>Psychiatriques</p>
+                </span>
+                <span class="patho_item effet-soulignement " data-filter=".addic">
+                    <p>Addictifs</p>
+                </span>
+            </div>
+
+            <div class="pathoContainer">
+                <div class="tab mix can">
+                    <h2>Pathologie Cancer</h2>
+                    <div class="scrollable-table">
+                        <table id="tabPathoCancer">
+                            <th>ID</th>
+                            <th>Prénom</th>
+                            <th>Nom</th>
+                            <th>Date de Naissance</th>
+                            <th>Adresse</th>
+                            <th>Code Postale</th>
+                            <th>Ville</th>
+                            <th>Téléphone</th>
+                        </table>
+                    </div>
+
+                </div>
+                <div class="tab mix psy">
+                    <h2>Pathologie Psychiatrique</h2>
+                    <div class="scrollable-table">
+                        <table id="tabPathoPsychiatrique">
+                            <th>ID</th>
+                            <th>Prénom</th>
+                            <th>Nom</th>
+                            <th>Date de Naissance</th>
+                            <th>Adresse</th>
+                            <th>Code Postale</th>
+                            <th>Ville</th>
+                            <th>Téléphone</th>
+                        </table>
+                    </div>
+                </div>
+                <div class="tab mix addic">
+                    <h2>Pathologie Addictif</h2>
+                    <div class="scrollable-table">
+                        <table id="tabPathoAddictif">
+                            <th>ID</th>
+                            <th>Prénom</th>
+                            <th>Nom</th>
+                            <th>Date de Naissance</th>
+                            <th>Adresse</th>
+                            <th>Code Postale</th>
+                            <th>Ville</th>
+                            <th>Téléphone</th>
+                        </table>
+                    </div>
+                </div>
+                <div class="tab mix car">
+                    <h2>Pathologie Cardiaque</h2>
+                    <div class="scrollable-table">
+                        <table id="tabPathoCardiaque">
+                            <th>ID</th>
+                            <th>Prénom</th>
+                            <th>Nom</th>
+                            <th>Date de Naissance</th>
+                            <th>Adresse</th>
+                            <th>Code Postale</th>
+                            <th>Ville</th>
+                            <th>Téléphone</th>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="requeteSection" id="requeteSection2">
+            <p>Un classement des pathologies les plus courantes chez les administrés </p>
+
+            <!-- <div class="patho_filters">
+                    <span class="patho_item active-work" data-filter="all"><p>All</p></span>
+                    <span class="patho_item" data-filter=".tableau"><p>Tableau</p></span>
+                    <span class="patho_item" data-filter=".graph"><p>Graphique</p></span>
+                </div>
+                  -->
+
+            <div id="requeteSectionS2">
+                <div>
+                    <div class="tab">
+                        <h2>Tableau</h2>
+                        <div class="scrollable-table">
+                            <table id="tabClassementPatho">
+                                <th>Pathologie</th>
+                                <th>Nombre d'administrés</th>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="tab">  
+                        <h2>Graphique</h2>
+                        <img src="./data/graphiqueClassementPatho.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="boutons">
+
+    </div>
+    </div>
+
+
+
+
+    <div id="footer">
+        <div class="haut">
+            <div class="firstItem">
+                <div class="logoC">
+                    <img src="../images/logo.png" alt="">
+                </div>
+                <div class="plan">
+                    <img id="carte" src="../images/footer/carte.png" alt="">
+                    <p>Consulter le Plan</p>
+                </div>
+            </div>
+            <div class="traitSepa"></div>
+            <div class="secondItem">
+                <div class="secondItemCss">
+                    <img id="img1" src="../images/footer/localisation.png" alt="">
+                    <p>
+                        <span class="gras">HÔTEL DE VILLE DE COLOMBES</span><br>
+                        PLACE DE LA RÉPUBLIQUE <br>
+                        92700 COLOMBES
+                    </p>
+                </div>
+                <div class="secondItemCss">
+                    <img id="img2" src="../images/footer/telephone.png" alt="">
+                    <p>
+                        <span class="gras">01 47 60 80 00</span><br>
+                        <span id="num"> <a href="numeroUtiles.html">Les Numéros Utiles ></a></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="bas">
+            <div class="thirdItem">
+                <div class="iconRow">
+                    <div class="iconNom">
+                        <img src="../images/footer/twitter.png" alt="">
+                        <p>Twitter</p>
+                    </div>
+                    <div class="iconNom">
+                        <img src="../images/footer/facebook.png" alt="">
+                        <p>Facebook</p>
+                    </div>
+                </div>
+                <div class="iconRow">
+                    <div class="iconNom">
+                        <img id="mail" src="../images/footer/mail.png" alt="">
+                        <p>Mail</p>
+                    </div>
+                    <div class="iconNom">
+                        <img src="../images/footer/news.png" alt="">
+                        <p>NewsLetters</p>
+                    </div>
+                </div>
+            </div>
+            <div class="traitSepa"></div>
+            <div class="horraire">
+                <p class="gras uppercase">Horaires</p>
+                <p class="uppercase">
+                    <span id="jour" class="gras">LUNDI</span> <br>
+                    ACCUEIL : 08H30-17H30 <br>
+                    SERVICES : 10H30-17H30 <br>
+                    <span id="jour" class="gras">DU MARDI AU VENDREDI</span><br>
+                    8H30-17H30 <br>
+                    <span id="jour" class="gras">SAMEDI</span> : 9H-12H <br>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Fonction pour afficher les données à partir d'un fichier
+        function afficherDonnees(tableId, fichierPath) {
+            fetch(fichierPath)
+                .then(response => response.text())
+                .then(data => {
+                    var lines = data.trim().split('\n');
+                    var tableau = document.getElementById(tableId);
+
+                    for (var i = 0; i < lines.length; i++) {
+                        var line = lines[i].split(';');
+                        var id = line[0];
+                        var prenom = line[1].replace(/"/g, '');
+                        var nom = line[2].replace(/"/g, '');
+                        var dateNaissance = formatDate(line[3]);
+                        var adresse = line[4].replace(/"/g, '');
+                        var Code_Postale = line[5];
+                        var ville = line[6].replace(/"/g, '');
+                        var telephone = line[7].replace(/"/g, '');
+
+                        var row = tableau.insertRow(-1);
+                        var cell1 = row.insertCell(0);
+                        var cell2 = row.insertCell(1);
+                        var cell3 = row.insertCell(2);
+                        var cell4 = row.insertCell(3);
+                        var cell5 = row.insertCell(4);
+                        var cell6 = row.insertCell(5);
+                        var cell7 = row.insertCell(6);
+                        var cell8 = row.insertCell(7);
+
+                        cell1.innerHTML = id;
+                        cell2.innerHTML = prenom;
+                        cell3.innerHTML = nom;
+                        cell4.innerHTML = dateNaissance;
+                        cell5.innerHTML = adresse;
+                        cell6.innerHTML = Code_Postale;
+                        cell7.innerHTML = ville;
+                        cell8.innerHTML = telephone;
+                    }
+                })
+                .catch(error => {
+                    console.error('Une erreur s\'est produite lors de la lecture du fichier :', error);
+                });
+        }
+
+        // Appel de la fonction pour chaque tableau
+        afficherDonnees("tabPathoCancer", './data/PersonneMaladeCancer.txt');
+        afficherDonnees("tabPathoPsychiatrique", './data/PersonneMaldePsychiatrie.txt');
+        afficherDonnees("tabPathoAddictif", './data/PersonneMaladeAddictif.txt');
+        afficherDonnees("tabPathoCardiaque", './data/PersonneMaladeCardiaque.txt');
+
+        // Classement Patho
+        fetch('./data/ClassementPathologie.txt')
+            .then(response => response.text())
+            .then(data => {
+                var lines = data.trim().split('\n');
+                var tableau = document.getElementById("tabClassementPatho");
+
+                for (var i = 0; i < lines.length; i++) {
+                    var line = lines[i].split(';');
+                    var specialite = line[0].replace(/"/g, '');
+                    var nombrePatients = line[1];
+
+                    var row = tableau.insertRow(-1);
+                    var cell1 = row.insertCell(0);
+                    var cell2 = row.insertCell(1);
+
+                    cell1.innerHTML = specialite;
+                    cell2.innerHTML = nombrePatients;
+                }
+            })
+            .catch(error => {
+                console.error('Une erreur s\'est produite lors de la lecture du fichier :', error);
+            });
+
+        // Fonction pour formater la date
+        function formatDate(date) {
+            var parts = date.split('/');
+            if (parts[0].length === 1) {
+                parts[0] = '0' + parts[0];
+            }
+            if (parts[1].length === 1) {
+                parts[1] = '0' + parts[1];
+            }
+            return parts.join('/');
+        }
+    </script>
+
+
+
+
+    <script>
+        function hover(img, i) {
+            switch (i) {
+                case 1:
+                    img.src = "../images/recherche-hover.png";
+                    break;
+                case 2:
+                    img.src = "../images/connexion-hover.png";
+                    break;
+                case 3:
+                    img.src = "../images/hamburger-hover.png";
+                    break;
+                default: break;
+            }
+        }
+        function hoverOut(img, i) {
+            switch (i) {
+                case 1:
+                    img.src = "../images/recherche.png";
+                    break;
+                case 2:
+                    img.src = "../images/connexion.png";
+                    break;
+                case 3:
+                    img.src = "../images/hamburger.png";
+                    break;
+                default: break;
+            }
+        }
+    </script>
+
+    <script src="mixitup.min.js"></script>
+    <script src="enquete.js"></script>
+
+
+</body>
+
+</html>
