@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ville de Colombes - Ville de Colombes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="../images/mini-logo.png">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="styleAccueil.css">
+</head>
+
+<header>
+    <!--################################DEBUT DE LA BARRE DE NAVIGUATION###################################-->
+    <nav class="navbar">
+      <a href="Accueil.html" class="logo"><img src="../images/logo.png" width="160px"></a>
+      <div class="nav-likns">
+          <ul>
+            <li> <a href="#" class="administration  effet-soulignement"> ADMINISTRATION <br> PUBLIQUE </a></li>
+            <li> <a href="#" class="service effet-soulignement">SERVICE <br> SOCIAUX </a></li>
+            <li> <a href="#" class="loisirs effet-soulignement">LOISIRS ET <br> CULTURE</a> </li>
+            <li class="klass"> <a href="#" class="economie effet-soulignement">ECONOMIE ET <br> MOBILITE </a></li>
+            <div class="recherche">
+                  <div class="search2">
+                      <button class="btnSearch2">
+                          <img src="../images/recherche.png" id="search2">
+                      </button>
+                  </div>
+                  <input type="search" placeholder="  Rechercher..." id="inputSearch2" class = "inputSearch2">
+              </div>                      
+          </ul>            
+      </div>
+      <input type="search" placeholder=" Que recherchez-vous ?..." id="inputSearch" class = "inputSearch">
+      <div id="logos">
+        <div class="search">
+            <button class="btnSearch">
+                <img src="../images/recherche.png" id="search" onmouseover="hover(this, 1);" onmouseout="hoverOut(this,1)">
+            </button>
+        </div>
+        <div class="connexion">
+            <a href="../Page de Connexion/pageDeConnexion.html"><img src="../images/connexion.png" alt="region" width="42px" height="42px" onmouseover="hover(this,2);" onmouseout="hoverOut(this,2)"></a>
+        </div>
+    </div>
+    <img src="../images/hamburger.png" width="100px" class="menu-hamburger" id="burger"  onmouseover="hover(this, 3);" onmouseout="hoverOut(this,3)">
+  </nav>
+    <!--################################FIN DE LA BARRE DE NAVIGUATION###################################-->
+
+
+    <!--################################DEBUT DU FOND DE L'HEADER###################################-->
+    <video autoplay muted loop id="video-background">
+        <source src="../video/ColombesVille.mp4" type="video/mp4">
+    </video>
+    <div class="video-text">
+        <h1 class="animate-text">Ville de Colombes</h1>
+        <div id="trait-titre">
+        </div>
+    </div> 
+</header>
+  <!--################################FIN DU FOND DE L'HEADER###################################-->
+
+
+<body>
+  <div class="btnRemonter">
+    <img src="../images/iconRemonter.png" class="iconRemonter">
+  </div>
+
+   <!--################################DEBUT ACCES RAPIDE###################################-->
+  <div class="AccesRapide">
+    <div class="txtTitre">
+      <p>Accès rapide</p>
+    </div>
+    <div class="btn">
+      <div class="haut">
+      
+        <a href="../code Demarche ISRA/demarche.html">
+          <button class="my-button" id="btn1"><p class="ligne">Démarches</p></button>
+        </a>
+        <a href="../actualite Marion Parmentier/actualiteP1.html">
+          <button class="my-button"><p class="ligne">Actualités</p></button>
+        </a>
+
+      </div>
+      <div class="bas">
+
+        <a href="../code NumeroUtiles NAMO/numeroUtiles.html">
+          <button class="my-button"><p class="ligne">Numéros utiles</p></button>
+        </a>
+        <a href="../code Enquete NAMO/enquete.html">
+          <button class="my-button"><p class="ligne">Enquête</p></button>
+        </a>
+      </div>  
+  </div> 
+</div>
+   <!--################################FIN ACCES RAPIDE###################################-->
+
+
+  <!--################################DEBUT CAROUSEL A LA UNE###################################-->
+    <section id="tranding">
+        <div class="separer">
+            <p>À la une</p>
+            <div class="trait"></div>
+        </div>
+        <div class="container">
+          <div class="swiper tranding-slider">
+            <div class="swiper-wrapper">
+              
+              <!-- Slide-start -->
+              <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                    <a href="https://www.colombes.fr/actualites-23/etats-generaux-de-la-jeunesse-le-temps-des-rencontres-1957.html?cHash=5c1ebf01190e96e8cbbff7a0dd6f93a2">
+                        <img src="../images/jeune.jpeg" alt="Tranding">
+                    </a>
+                </div>
+                <div class="tranding-slide-content">
+                  <div class="tranding-slide-content-bottom">
+                    <p class="title">
+                        États généraux de la jeunesse :<br> le temps des rencontres
+                    </h2>
+                    <p class="info">
+                        La municipalité vous donne rendez-vous pour échanger librement sur tous les sujets qui vous concernent avant d’établir un plan d’actions.
+                    <p>
+                  </div>
+                </div>
+              </div>
+              <!-- Slide-end -->
+              <!-- Slide-start -->
+              <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                    <a href="https://www.colombes.fr/actualites-23/en-piste-pour-les-foulees-olympiques-863.html?cHash=db881b94b3b3fba87996bc8eb4b31356">
+                        <img src="../images/course.webp" alt="Tranding">
+                    </a>
+                </div>
+                <div class="tranding-slide-content">
+                  <div class="tranding-slide-content-bottom">
+                    <p class="title">
+                        En piste pour les Foulées Olympiques Colombiennes !
+                    </p>
+                    <p class="info">
+                        Amateurs ou semi-pros, juniors ou seniors, toutes et tous sont les bienvenus pour participer à ce rendez-vous incontournable.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Slide-end -->
+              <!-- Slide-start -->
+              <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                  <img src="../images/maire.jpeg" alt="Tranding">
+                </div>
+                <div class="tranding-slide-content">
+                  <div class="tranding-slide-content-bottom">
+                    <p class="title">
+                        Patrick CHAIMOVITCH, Maire de Colombes
+                    </p>
+                    <p class="info">
+                        Rien ne justifie qu’on s’en prenne aux personnes, aux services publics et aux forces de l’ordre.                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Slide-end -->
+              <!-- Slide-start -->
+              <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                    <a href="https://www.colombes.fr/actualites-23/mouvement-de-greve-du-vendredi-13-octobre-1810.html?cHash=d9e280c99f033ba5ebc0d9892bc22ba0">
+                        <img src="../images/greve.jpeg" alt="Tranding">
+                    </a>
+                </div>
+                <div class="tranding-slide-content">
+                  <div class="tranding-slide-content-bottom">
+                    <p class="title">
+                        Mouvement de grève du <br>vendredi 13 octobre
+                    </p>
+                    <p class="info">
+                        Une grève interprofessionnelle est prévue le vendredi 13 octobre 2023
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Slide-end -->
+              <!-- Slide-start -->
+              <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                    <a href="https://www.colombes.fr/actualites-23/un-mois-pour-valoriser-lartisanat-local-1949.html?cHash=02f5cd349836605e26095f71d7775071">
+                        <img src="../images/artisanat.jpeg" alt="Tranding">
+                    </a>
+                </div>
+                <div class="tranding-slide-content">
+                  <div class="tranding-slide-content-bottom">
+                    <p class="title">
+                        Valoriser l’artisanat local
+                    </p>
+                    <p class="info">
+                        Du 15 septembre au 15 octobre prochains, la Ville lance le Mois de l’artisanat et du commerce de proximité.C'est une premier à Colombes!                   <p>
+                  </div>
+                </div>
+              </div>
+              <!-- Slide-end -->
+              <!-- Slide-start -->
+              <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                    <a href="https://www.colombes.fr/actualites-23/tri-des-emballages-en-verre-agir-pour-lenvironnement-1953.html?cHash=0ca2503b3931fb64bd801407a7847e7c">
+                        <img src="../images/recyclage.jpeg" alt="Tranding">
+                    </a>
+                </div>
+                <div class="tranding-slide-content">
+                  <div class="tranding-slide-content-bottom">
+                    <p class="title">
+                      Tri des emballages en verre
+                    </p>
+                    <p class="info">
+                      Trier ses déchets : un geste quotidien pour favoriser le recyclage et la valorisation de nos emballages, notamment en verre ! </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Slide-end -->
+              <!-- Slide-start -->
+              <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                    <a href="https://www.colombes.fr/actualites-23/la-nature-en-automne-1952.html?cHash=4b48196374901db5b0b8abcb0aeef9c2">
+                        <img src="../images/automne.avif" alt="Tranding">
+                    </a>
+                </div>
+                <div class="tranding-slide-content">
+                  <div class="tranding-slide-content-bottom">
+                    <p class="title">
+                      La nature en automne
+                    </p>
+                    <p class="info">
+                      À vos objectifs ! La municipalité organise cette année un concours photo ouvert à toutes et tous sur le thème de la nature à Colombes en automne.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Slide-end -->
+    
+        
+            </div>
+  
+            <div class="tranding-slider-control">
+              <div class="swiper-button-prev slider-arrow">
+                <ion-icon name="arrow-back-outline"></ion-icon>
+              </div>
+              <div class="swiper-button-next slider-arrow">
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+  
+          </div>
+        </div>
+      </section>
+      <!--################################FIN CAROUSEL A LA UNE###################################-->
+
+
+      <!--################################DEBUT AGENDA###################################-->
+      <div class="separerBlue">
+        <p>Agenda</p>
+        <div class="traitBlue"></div>
+      </div>
+      <div class="actu actu2">
+        <section class="actualite" id="actualite1">
+            <div class="max-width">
+                <div class="carousel owl-carousel">
+                    <div class="card">
+                        <div class="box">
+                            <a href="https://www.colombes.fr/tout-l-agenda/evenement-37/octobre-rose-sein-boliquement-rose-1060.html?tx_cal_controller%5Btype%5D=tx_cal_phpicalendar&cHash=87ef848c6c314bb9190e80d802196017" target="_blank"><img src="../images/rose.png" alt=""></a>
+                            <div class="text"><b>1-30 Octobre</b></div>
+                            <p>Octobre rose</p>
+                        </div>
+                    </div>                   
+                    <div class="card">
+                        <div class="box">
+                            <a href ="https://www.colombes.fr/tout-l-agenda/evenement-37/la-ville-vous-offre-ses-plantations-639.html?tx_cal_controller%5Btype%5D=tx_cal_phpicalendar&cHash=a40b66796be48366bff0d39a5f61c724" target="_blank"><img src="../images/plante.webp" alt=""></a>
+                            <div class="text"><b>25-28 Octobre</b></div>
+                            <p>Vive les plantes</p>
+                        </div>
+                    </div> 
+                    <div class="card">
+                      <div class="box">
+                          <a href="https://www.colombes.fr/tout-l-agenda/evenement-37/mythes-nordiques-lancement-du-festival-rumeurs-urbaines-2228.html?tx_cal_controller%5Btype%5D=tx_cal_phpicalendar&cHash=cbff0c51cb147bcf19d713cc1bdff0b0" target="_blank"><img src="../images/mythe.webp" alt=""></a>
+                          <div class="text"><b>28-29 Octobre</b></div>
+                          <p>Mythes nordiques</p>
+                      </div>
+                  </div>   
+                </div>
+            </div>
+        </section>
+        <section class="actualite" id="actualite2">
+            <div class="max-width">
+                <div class="carousel owl-carousel">
+                  <div class="card">
+                    <div class="box">
+                        <a href ="https://www.colombes.fr/tout-l-agenda/evenement-37/festival-des-expressions-urbaines-2023-2232.html?tx_cal_controller%5Btype%5D=tx_cal_phpicalendar&cHash=50e8027541aede3bd1cac88e3f730e90" target="_blank"><img src="../images/festival.jpeg" alt=""></a>
+                        <div class="text"><b>19-04 Novembre</b></div>
+                        <p>Festival urbain</p>
+                    </div>
+                  </div>  
+                    <div class="card">
+                        <div class="box">
+                            <a href ="https://www.colombes.fr/tout-l-agenda/evenement-37/une-histoire-damour-alexis-michalik-2248.html?tx_cal_controller%5Btype%5D=tx_cal_phpicalendar&cHash=b495fbd2f8d0170539460a805ae90ca4" target="_blank"><img src="../images/Theatre.jpeg" alt=""></a>
+                            <div class="text"><b>14 Novembre</b></div>
+                            <p>Une histoire d'amour</p>
+                        </div>
+                    </div>     
+                    <div class="card">
+                        <div class="box">
+                            <a href ="https://www.colombes.fr/tout-l-agenda/evenement-37/venez-decouvrir-les-dechets-autrement-2249.html?tx_cal_controller%5Btype%5D=tx_cal_phpicalendar&cHash=ebd2e3b3e68660c9ca887ac50c1fcbde" target="_blank"><img src="../images/portesOuvertes.webp" alt=""></a>
+                            <div class="text"><b>18 Novembre</b></div>
+                            <p>Portes ouvertes</p>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </section>
+    </div>
+    <!--################################DEBUT AGENDA###################################-->
+
+
+    <!--################################DEBUT METEO###################################-->
+    <section class="Meteo">
+      <div class="separer">
+        <p>Méteo</p>
+        <div class="trait"></div>
+      </div>
+      <div id="id3efa83bbbffa9" a='{"t":"g7bs","v":"1.2","lang":"fr","locs":[61],"ssot":"c","sics":"ds","cbkg":"rgba(7,55,99,1)","cfnt":"rgb(255,255,255)","cend":"rgba(0,0,0,0.11)","slfs":19,"slis":40}'>Source des données météo: <a href="https://meteolabs.fr/meteo_colombes/demain/">https://meteolabs.fr/meteo_colombes/demain/</a></div><script async src="https://static1.meteolabs.fr/widgetjs/?id=id3efa83bbbffa9"></script>
+      <div class="separerM">
+        <div class="traitM"></div>
+      </div>   
+    </section>
+    <!--################################FIN METEO###################################-->
+  
+
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+      <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+      <script src="scriptAccueil.js"></script>
+      
+
+    <!--################################ DEBUT FOOTER###################################-->
+      <div id="footer">
+        <div class="haut">
+            <div class="firstItem">
+                <div class="logoC">
+                    <img src="../images/logo.png" alt="">
+                </div>
+                <div class="plan">
+                    <img id="carte" src="../images/footer/carte.png" alt="">
+                    <p>Consulter le Plan</p>
+                </div>
+            </div>
+            <div class="traitSepa"></div>
+            <div class="secondItem">
+                <div class="secondItemCss">
+                    <img id="img1" src="../images/footer/localisation.png" alt="">
+                    <p>
+                        <span class="gras">HÔTEL DE VILLE DE COLOMBES</span><br>
+                        PLACE DE LA RÉPUBLIQUE <br>
+                        92700 COLOMBES
+                    </p>
+                </div>
+                <div class="secondItemCss">
+                    <img id="img2" src="../images/footer/telephone.png" alt="">
+                    <p>
+                        <span class="gras">01 47 60 80 00</span><br>
+                        <span id="num"> <a href="../code NumeroUtiles NAMO/numeroUtiles.html">Les Numéros Utiles ></a></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="bas">
+            <div class="thirdItem">
+                <div class="iconRow">
+                  <div class="iconNom">
+                    <a href="https://twitter.com/villecolombes?lang=fr">
+                    <img src="../images/footer/twitter.png" alt=""></a>
+                    <p>Twitter</p></a>
+                </div>
+                <div class="iconNom">
+                    <a href="https://www.facebook.com/VilleColombes/?locale=fr_FR">
+                    <img src="../images/footer/facebook.png" alt=""></a>
+                    <p>Facebook</p>
+                </div>
+                </div>
+                <div class="iconRow">
+                    <div class="iconNom">
+                        <img id="mail" src="../images/footer/mail.png" alt="">
+                        <p>Mail</p>
+                    </div>
+                    <div class="iconNom">
+                        <img src="../images/footer/news.png" alt="">
+                        <p>NewsLetters</p>
+                    </div>
+                </div>
+            </div>
+            <div class="traitSepa"></div>
+            <div class="horraire">
+                <p class="gras uppercase">Horaires</p>
+                <p class="uppercase">
+                    <span id="jour" class="gras">LUNDI</span> <br>
+                    ACCUEIL : 08H30-17H30 <br>
+                    SERVICES : 10H30-17H30 <br>
+                    <span id="jour" class="gras">DU MARDI AU VENDREDI</span><br>
+                    8H30-17H30 <br>
+                    <span id="jour" class="gras">SAMEDI</span> : 9H-12H <br>
+                </p>
+            </div>
+        </div>
+    </div>
+        <!--################################ FIN FOOTER###################################-->
+
+</body>
+
+</html>
